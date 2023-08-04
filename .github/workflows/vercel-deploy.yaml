@@ -18,3 +18,5 @@ jobs:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_ORG_ID: dt2LAL3EbgO5gkUdNsZb6CG3
           VERCEL_PROJECT_ID: prj_LvcoKBHK2Juv5R5ouGbobhczYjWz
+          BUILD_ENV: |
+            DOPPLER_TOKEN=${{ secrets.DOPPLER_TOKEN }}
