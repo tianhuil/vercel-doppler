@@ -2,7 +2,7 @@
 
 const https = require('https')
 
-module.exports.getSecrets = async () => {
+getSecrets = async () => {
   return new Promise(function(resolve, reject) {
     https.get(`https://${process.env.DOPPLER_TOKEN}@api.doppler.com/v3/configs/config/secrets/download?format=json`, (res) => {
       let secrets = ''
