@@ -13,5 +13,5 @@ getSecrets = async () => {
 }
 
 export default async function handler(req, res) {
-  res.status(200).json({ name: 'John Doe', appEnv: process.env.APP_ENV, secrets: await this.getSecrets() })
+  res.status(200).json({ name: 'John Doe', appEnv: process.env.APP_ENV, secrets: await getSecrets() })
 }
