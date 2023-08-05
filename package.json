@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "DOPPLER_TOKEN=$(cat doppler_token) next start",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
