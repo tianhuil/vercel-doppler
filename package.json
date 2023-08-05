@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "./build.sh",
+    "build": "DOPPLER_TOKEN=$(cat doppler_token) next build && rm doppler_token",
     "start": "next start",
     "lint": "next lint"
   },
