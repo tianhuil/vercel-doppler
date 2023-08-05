@@ -12,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Write Doppler Token
-        run: echo "DOPPLER_TOKEN=${{ secrets.DOPPLER_TOKEN }}" > .env.local
+        run: echo "DOPPLER_TOKEN=${{ secrets.DOPPLER_TOKEN }}" > .env
       - name: Deploy to Vercel Action
         uses: BetaHuhn/deploy-to-vercel-action@v1
         with:
@@ -20,4 +20,3 @@ jobs:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_ORG_ID: dt2LAL3EbgO5gkUdNsZb6CG3
           VERCEL_PROJECT_ID: prj_LvcoKBHK2Juv5R5ouGbobhczYjWz
-
